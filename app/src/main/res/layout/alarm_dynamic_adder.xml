@@ -1,0 +1,328 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/pc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginTop="50dp"
+        app:neumorph_shadowElevation="6dp"
+        app:neumorph_shapeType="flat"
+        app:neumorph_shadowColorLight="@color/strokecol"
+        app:neumorph_shadowColorDark="@color/strokecol"
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+        app:neumorph_backgroundColor="@color/backgroundColor"
+        app:neumorph_strokeWidth="18dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:stretchColumns="0,1"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:showText="true"
+                    android:id="@+id/port1_text"
+                    android:text="Camera location"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:stretchColumns="0,1">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <soup.neumorphism.NeumorphCardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="4dp"
+                        app:neumorph_backgroundColor="@color/backgroundColor"
+                        app:neumorph_shadowColorDark="@color/strokecol"
+                        app:neumorph_shadowColorLight="@color/strokecol"
+                        app:neumorph_shadowElevation="6dp"
+                        app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+                        app:neumorph_shapeType="flat"
+                        app:neumorph_strokeWidth="18dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/backgroundColor"
+                                android:drawablePadding="10dp"
+                                android:gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="10dp"
+                                android:showText="true"
+                                android:text="Begin:"
+                                android:textColor="@color/textColor"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/startTime1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@color/backgroundColor"
+                                android:drawableLeft="@mipmap/clock"
+                                android:drawablePadding="10dp"
+                                android:gravity="center|start"
+                                android:showText="true"
+                                android:textColor="@color/textColor"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:onClick="onStartTimeClick" />
+
+                            <!-- Add clock image for selecting start time -->
+                            <ImageView
+                                android:id="@+id/startTimeClockImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_clock"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/start_time_clock_description"
+                                android:onClick="onStartTimeClick"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp" />
+
+                            <!-- Add AM/PM Spinner for start time -->
+                            <Spinner
+                                android:id="@+id/amPmStartSpinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="10dp" />
+                        </LinearLayout>
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                    <soup.neumorphism.NeumorphCardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="4dp"
+                        app:neumorph_backgroundColor="@color/backgroundColor"
+                        app:neumorph_shadowColorDark="@color/strokecol"
+                        app:neumorph_shadowColorLight="@color/strokecol"
+                        app:neumorph_shadowElevation="6dp"
+                        app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+                        app:neumorph_shapeType="flat"
+                        app:neumorph_strokeWidth="18dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/backgroundColor"
+                                android:drawablePadding="10dp"
+                                android:gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="10dp"
+                                android:showText="true"
+                                android:text="End:"
+                                android:textColor="@color/textColor"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/stopTime1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@color/backgroundColor"
+                                android:drawableLeft="@mipmap/clock"
+                                android:drawablePadding="10dp"
+                                android:gravity="center|start"
+                                android:showText="true"
+                                android:textColor="@color/textColor"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:onClick="onStopTimeClick" />
+
+                            <!-- Add clock image for selecting stop time -->
+                            <ImageView
+                                android:id="@+id/stopTimeClockImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_clock"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/stop_time_clock_description"
+                                android:onClick="onStopTimeClick"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp" />
+
+                            <Spinner
+                                android:id="@+id/amPmEndSpinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="10dp" />
+                        </LinearLayout>
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                </TableRow>
+            </TableLayout>
+
+            <!-- Days Selector -->
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:neumorph_shapeAppearance="@style/CustomCircleShapeAppearance"
+                app:neumorph_shadowElevation="4dp"
+                app:neumorph_shadowColorLight="@color/strokecol"
+                app:neumorph_shadowColorDark="@color/strokecol"
+                app:neumorph_backgroundColor="@color/backgroundColor"
+                app:neumorph_strokeWidth="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Add Sunday Selector -->
+                    <ImageView
+                        android:id="@+id/sunday"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="2dp"
+                        android:src="@drawable/sunday_selector"
+                        android:clickable="true"/>
+
+                    <!-- Add Monday Selector -->
+                    <ImageView
+                        android:id="@+id/monday"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/monday_selector"
+                        android:clickable="true"/>
+
+                    <!-- Add Tuesday Selector -->
+                    <ImageView
+                        android:id="@+id/tuesday"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/tuesday_selector"
+                        android:clickable="true"/>
+
+                    <!-- Add Wednesday Selector -->
+                    <ImageView
+                        android:id="@+id/wednesday"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/wednesday_selector"
+                        android:clickable="true"/>
+
+                    <!-- Add Thursday Selector -->
+                    <ImageView
+                        android:id="@+id/thursday"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/thursday_selector"
+                        android:clickable="true"/>
+
+                    <!-- Add Friday Selector -->
+                    <ImageView
+                        android:id="@+id/friday"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/friday_selector"
+                        android:clickable="true"/>
+
+                    <!-- Add Saturday Selector -->
+                    <ImageView
+                        android:id="@+id/saturday"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/saturday_selector"
+                        android:clickable="true"/>
+                </LinearLayout>
+            </soup.neumorphism.NeumorphCardView>
+
+            <!-- Button -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@color/backgroundColor">
+
+                <soup.neumorphism.NeumorphButton
+                    android:id="@+id/buttonUp1"
+                    style="@style/Widget.Neumorph.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:neumorph_backgroundColor="@color/textColor"
+                    android:textColor="@color/backgroundColor"
+                    android:text="@string/update"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:neumorph_shadowColorLight="@color/strokecol"
+                    app:neumorph_shadowColorDark="@color/strokecol"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </soup.neumorphism.NeumorphCardView>
+
+</RelativeLayout>

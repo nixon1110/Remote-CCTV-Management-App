@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="two_dp">2dp</dimen>
+    <dimen name="four_dp">4dp</dimen>
+    <dimen name="eight_dp">8dp</dimen>
+    <dimen name="sixteen_dp">16dp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_large">17sp</dimen>
+    <dimen name="list_item_padding">8dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_height">180dp</dimen>
+    <dimen name="_240sdp">240sp</dimen>
+    <dimen name="_10sdp">10sp</dimen>
+    <dimen name="margin_bottom_camera_view">16dp</dimen>
+    <dimen name="text_size_camera_location">14sp</dimen>
+</resources>

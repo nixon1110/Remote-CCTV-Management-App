@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soup.neumorphism.NeumorphCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:neumorph_backgroundColor="@color/backgroundColor"
+    app:neumorph_shadowColorDark="@color/strokecol"
+    app:neumorph_shadowColorLight="@color/strokecol"
+    app:neumorph_shadowElevation="8dp"
+    app:neumorph_shapeType="flat"
+    app:neumorph_strokeWidth="18dp"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/alertsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/alertImageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            android:src="@drawable/testimg1" /> <!-- Replace with your image -->
+
+    </LinearLayout>
+</soup.neumorphism.NeumorphCardView>

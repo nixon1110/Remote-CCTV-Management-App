@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_home"
+        android:icon="@drawable/home_vector"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/bottom_add_device"
+        android:icon="@drawable/add_device"
+        android:title="Add Device"/>
+
+    <item
+        android:id="@+id/bottom_notification"
+        android:icon="@drawable/notification_vector"
+        android:title="Notification"/>
+    <item
+        android:id="@+id/bottom_scheduler"
+        android:icon="@drawable/schedular_vector"
+        android:title="AlarmSchedule"/>
+
+    <item
+        android:id="@+id/bottom_personal"
+        android:icon="@drawable/profile_vector"
+        android:title="Profile"/>
+
+
+
+</menu>
